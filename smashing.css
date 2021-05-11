@@ -19,7 +19,8 @@ body {
 .nav {
   height: 100px;
   top: 0;
-  background-color: #303030;
+  color: #484848;
+  background-color: #202020;
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
@@ -28,7 +29,7 @@ body {
 .navList {
   height: 60px;
   top: 100px;
-  background-color: #ccc;
+  background-color: #e8e8e8;
 }
 
 .nav div, .navList div{
@@ -45,17 +46,17 @@ body {
 .navList div{
   font-size: 18px;
   border-radius: 5px;
-  background-color: #181818;
+  background-color: #383838;
   padding: 8px;
 }
 
 .nav div:last-child {
   height: 60px;
-  color: #303030;
+  color: #505050;
   justify-content: flex-start;
   box-sizing: border-box;
   padding-left: 20px;
-  background-color: #fff;
+  background-color: #404040;
   width: 350px;
   border-radius: 10px;
 }
@@ -67,7 +68,6 @@ body {
   height: 950px;
   width: 100%;
   margin: 160px auto 0 auto;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -75,12 +75,48 @@ body {
 }
 
 aside {
-  height: 850px;
+  position: relative;
+  height: auto;
   width: 25%;
-  border: 1px solid black;
   box-sizing: border-box;
+  margin: auto;
+  background-color: #d3d3d3;
+  padding: 120px 20px 40px 20px;
+  text-align: center;
 }
 
+aside img {
+  position: absolute;
+  bottom: 80%;
+  width: 80%;
+  max-width: 300px;
+  right: 10%;
+}
+
+aside button {
+ height: 40px;
+ background-color: #505050;
+ width: 200px;
+ font-size: 16px;
+ border: none;
+ border-radius: 10px;
+ margin-bottom: 20px;
+}
+
+.section1 .form {
+  padding: 0 6px;;
+  margin: 20px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+}
+
+.form input {
+  height: 50px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #585858;
+}
 .section1 div {
   box-sizing: border-box;
   height: 250px;
@@ -104,7 +140,7 @@ div .large {
 picture {
   margin: auto;
   border-radius: 10px;
-  background-color: red;
+  background-color: #181818;
   padding: 8px;
   width: 70%;
 }
@@ -122,6 +158,7 @@ img {
 
 h1 {
   font-size: 40px;
+  color: black;
 }
 
 .med {
@@ -137,6 +174,16 @@ h1 {
 h2 {
   margin: 0 0 5px 0;
   font-size: 30px;
+  color: #606060;
+}
+
+p {
+  color: #787878;
+}
+
+.underline {
+  color: #202020;
+  font-style: 700;
 }
 
 .med p {
@@ -144,19 +191,30 @@ h2 {
 }
 
 .section2 {
-  height: 60vh;
-  border: 1px solid black;
+  height: auto;
   width: 90%;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
-  justify-content: space-around;
 }
 
 .section2 div {
-  height: 100%;
-  width: 30%;
-  border: 1px solid black;
+  height: auto;
+  width: 25%;
+  min-width: 300px;
+  background-color: lightgrey;
+  padding: 25px;
+  margin: auto;
+}
+
+.section2 div button {
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 15px;
+  margin: 20px 0;;
 }
 
 .divide {
